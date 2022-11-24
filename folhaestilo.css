@@ -1,0 +1,244 @@
+/* ---------------- BackGround ---------------- */
+
+@media screen and (min-width:
+1024px) {
+body { min-width: 1000px; }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body:hover #imgheader {
+    background-color: rgba(0, 255, 0, 0.562);
+}
+
+
+/* ---------------- BackGround ---------------- */
+
+
+/* ---------------- HEADER ---------------- */
+
+header {
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    background-color: rgba(2, 124, 2, 0.719);
+    border-radius: 15px;
+    font-size: 35px;
+}
+
+header h1 img {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.938);
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+
+/* ---------------- HEADER ---------------- */
+
+
+/* ---------------- CORPO ---------------- */
+
+main {
+    background-image: url("environment.jpg");
+    background-image: opacity .1;
+    background-repeat: no-repeat;
+    z-index: 0.2;
+    background-size: cover;
+    background-position: 50% auto auto auto;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+
+.center {
+    z-index: 0;
+    display: flex;
+    width: 700px;
+    height: 400px;
+    position: absolute;
+}
+
+.help {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.help h1 {
+    text-align: center;
+    position: absolute;
+    margin-left: 25%;
+    color: white;
+}
+
+.help h2 {
+    text-align: center;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 20%;
+    color: white;
+}
+
+#denuncie {
+    display: flex;
+    z-index: 1;
+    margin-top: 110px;
+    margin-left: 20%;
+    color: white;
+}
+
+#denuncie ul li {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: white;
+    border-left-style: none;
+    border-right-style: none;
+    width: 800px;
+    height: 100px;
+    margin-top: 2px;
+    text-align: left;
+    list-style: none;
+    margin-left: -50px;
+    padding-left: 10px;
+    display: flex;
+}
+#denuncie ul li h3{
+
+}
+#denuncie ul li a{
+    display: flex;
+    position: absolute;
+    padding-top: 60px;
+    padding-left: 10px;
+    color: rgb(82, 82, 189);
+}
+
+/* ---------------- BOTÕES ---------------- */
+
+.btn {
+    width: 200px;
+    height: 150px;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-left: 40%;
+    margin-top: 8px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    background-color: rgba(255, 255, 255, 0.808);
+    cursor: pointer;
+}
+.btn:active{
+    transform: scale(0.35);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.342);
+}
+
+.btn img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(0, 0, 0);
+}
+
+.btn-back {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(151, 149, 149, 0.096);
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-back p {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(0, 0, 0, 0);
+    opacity: 0%;
+}
+.btn-back img {
+    position: absolute;
+    top: 25%;
+    width: 24px;
+    height: 24px;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+.btn-back:hover{
+    background-color: rgba(151, 149, 149, 0.418);
+    width: 100px;
+    color: rgba(151, 149, 149, 0.281);
+    z-index: 1;
+    cursor: pointer;
+}
+.btn-back:hover p{
+    transition: all 0.5s ease-in-out;
+    display: block;
+    margin-top: 10px;
+    margin-left: 50%;
+    margin-right: auto;
+    z-index: 0;
+    color: rgba(151, 149, 149, 0.356);
+    opacity: 100%;
+}
+.btn-back:hover img{
+    transition: all 0.5s ease-in-out;
+    transform: rotate(-360deg);
+}
+.btn-back:active{
+    transform: scale(0.35);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.342);
+}
+/* ---------------- BOTÕES ---------------- */
+
+
+/* ---------------- CORPO ---------------- */
+
+
+/* ---------------- RODAPÉ ---------------- */
+
+footer {
+    background-color: rgba(2, 124, 2, 0.719);
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+/* ---------------- RODAPÉ ---------------- */
