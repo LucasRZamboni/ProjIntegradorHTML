@@ -82,30 +82,61 @@ main {
     margin-top: 5%;
 }
 
-.main #botão1,
-#botão2,
-#botão3 {
-    margin-left: 25%;
+
+/* ---------------- MAIN MAPS ---------------- */
+
+#titulo {
+    margin-left: 28%;
+    padding-top: 3%;
+    color: white;
+}
+
+#maps,
+#dash {
     position: absolute;
+    margin-left: 18%;
+    color: white;
 }
 
-.main #botão4,
-#botão5 {
-    margin-left: 60%;
-    position: absolute;
+#maps {
+    margin-top: 5%;
 }
 
-.main #botão2 {
-    margin-top: 20%;
+#maps h2,
+#dash h2 {
+    margin-bottom: 1%;
+    margin-left: 2%;
 }
 
-.main #botão3 {
-    margin-top: 35%;
+#maps p,
+#dash p {
+    margin-bottom: 3%;
+    margin-top: 1.5%;
+    margin-left: 3%;
+    margin-right: 5%;
 }
 
-.main #botão4 {
-    margin-top: 20%;
+#dash {
+    margin-top: 23%;
 }
+
+.p_border {
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, rgb(65, 170, 38), rgb(50, 189, 15));
+    border-image-slice: 2;
+    height: 100%;
+    /* border-left: none;
+    border-right: none; */
+}
+
+
+/* ---------------- MAIN MAPS ---------------- */
+
+
+/* ---------------- MAIN CONTEÚDO ---------------- */
+
+
+/* ---------------- MAIN CONTEÚDO ---------------- */
 
 
 /* ---------------- MAIN ---------------- */
@@ -182,6 +213,62 @@ main {
 
 /* ---------------- BOTÕES ---------------- */
 
+
+/* ---------------- BOTÕES HELP ---------------- */
+
+.main #botão1,
+#botão2,
+#botão3 {
+    margin-left: 25%;
+    position: absolute;
+}
+
+.main #botão4,
+#botão5 {
+    margin-left: 60%;
+    position: absolute;
+}
+
+.main #botão2 {
+    margin-top: 20%;
+}
+
+.main #botão3 {
+    margin-top: 35%;
+}
+
+.main #botão4 {
+    margin-top: 20%;
+}
+
+
+/* ---------------- BOTÕES HELP ---------------- */
+
+
+/* ---------------- BOTÕES CONTEUDO ---------------- */
+
+#botão_des,
+#botão_que,
+#botão_pol {
+    position: absolute;
+    margin-left: 45%;
+}
+
+#botão_des {
+    margin-top: 20%;
+}
+
+#botão_que {
+    margin-left: 45%;
+}
+
+#botão_pol {
+    margin-top: 35%;
+}
+
+
+/* ---------------- BOTÕES CONTEUDO ---------------- */
+
 .btn {
     width: 200px;
     height: 150px;
@@ -207,15 +294,15 @@ main {
 .btn img {
     width: 100px;
     height: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25%;
+    margin-right: 50%;
+    margin-top: 5%;
 }
 
 .btn p {
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5%;
     color: rgb(0, 0, 0);
 }
 
