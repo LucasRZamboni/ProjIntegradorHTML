@@ -124,7 +124,7 @@ main {
     background-color: rgba(0, 0, 0, 0.747);
     background-size: cover;
     min-height: 100vh;
-    margin-top: -18px;
+    /* margin-top: -px; */
 }
 
 .main span {
