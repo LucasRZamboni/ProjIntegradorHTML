@@ -4,68 +4,28 @@
     box-sizing: border-box;
 }
 
-@media only screen and (min-width: 350px) and (max-width: 650px) {
-    #botão1,
-    #botão2,
-    #botão3 {
-        left: -10%;
-    }
-    #botão1,
-    #botão5 {
-        top: 13%;
-    }
-    #botão4,
-    #botão5 {
-        left: 10%;
-    }
-    #botão2,
-    #botão4 {
-        top: 33%;
-    }
-    #botão3 {
-        top: 53%;
-    }
-}
-
-@media only screen and (min-width: 650px) and (max-width: 1000px) {
-    #botão1,
-    #botão2,
-    #botão3 {
-        left: -10%;
-    }
-    #botão1,
-    #botão5 {
-        top: 10%;
-    }
-    #botão4,
-    #botão5 {
-        left: 5%;
-    }
-    #botão2,
-    #botão4 {
-        top: 20%;
-    }
-    #botão3 {
-        top: 30%;
-    }
-}
-
 
 /* ---------------- BackGround ---------------- */
 
 body {
-    background-color: darkgreen;
+    background-image: url("environment.jpg");
+    background-image: opacity .1;
+    background-repeat: no-repeat;
+    z-index: 0.2;
+    background-size: cover;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    min-width: 100vh;
-    min-height: 100vh;
 }
 
 body:hover #imgheader {
-    background-color: rgba(0, 255, 0, 0.562);
+    background-color: rgba(255, 255, 255, 0.877);
+    box-shadow: 0px 0px 5px 5px rgba(7, 185, 0, 0.74);
+    transition: all 0.3s ease-in-out;
 }
 
 html {
     min-height: 100%;
+    min-width: 100%;
+    background-color: darkgreen;
 }
 
 
@@ -75,29 +35,37 @@ html {
 /* ---------------- HEADER ---------------- */
 
 header {
+    display: flex;
     width: 100%;
-    height: 55px;
-    border-radius: 15px;
-    z-index: 1000;
+    height: 60px;
+    background-color: darkgreen;
+    box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.459);
 }
 
 header h1 {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    padding-left: 60px;
+    width: 100%;
+    height: 40px;
     color: white;
-    background-color: rgba(2, 124, 2, 0.719);
-    border-radius: 15px;
-    font-size: 35px;
-    margin-top: 5px;
-    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.459);
+    background-color: darkgreen;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.678);
+    border-radius: 25px;
+    border-width: 4px;
+    border-color: green;
 }
 
 header h1 img {
-    width: 30px;
-    height: 30px;
-    background-color: rgba(255, 255, 255, 0.938);
-    border-radius: 15px;
-    margin-top: 10px;
-    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.452);
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: rgba(104, 103, 103, 0.562);
+    margin-right: 4px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.678);
 }
 
 
@@ -109,95 +77,15 @@ header h1 img {
 
 /* ---------------- MAIN ---------------- */
 
-main {
-    background-image: url("environment.jpg");
-    background-image: opacity .1;
-    background-repeat: no-repeat;
-    z-index: 0.2;
-    background-size: cover;
-    background-position: 50% auto auto auto;
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0);
     min-height: 100vh;
     min-width: 100vh;
-}
-
-.main {
-    background-color: rgba(0, 0, 0, 0.747);
-    background-size: cover;
-    min-height: 100vh;
-    /* margin-top: -px; */
-}
-
-.main span {
-    margin-top: 5%;
-}
-
-
-/* ---------------- MAIN MAPS ---------------- */
-
-#titulo {
-    margin-left: 28%;
-    padding-top: 3%;
-    color: white;
-}
-
-#maps,
-#dash {
-    position: absolute;
-    margin-left: 18%;
-    color: white;
-}
-
-#maps {
-    margin-top: 5%;
-}
-
-#maps h2,
-#dash h2 {
-    margin-bottom: 1%;
-    margin-left: 2%;
-}
-
-#maps p,
-#dash p {
-    margin-bottom: 3%;
-    margin-top: 1.5%;
-    margin-left: 3%;
-    margin-right: 5%;
-}
-
-#maps a,
-#dash a {
-    color: rgb(103, 103, 202);
-}
-
-#dash {
-    margin-top: 23%;
-}
-
-.p_border {
-    border: 2px solid transparent;
-    border-image: linear-gradient(45deg, rgb(65, 170, 38), rgb(50, 189, 15));
-    border-image-slice: 2;
-    height: 100%;
-    border-left: none;
-    border-right: none;
-}
-
-
-/* ---------------- MAIN MAPS ---------------- */
-
-
-/* ---------------- MAIN CONTEÚDO ---------------- */
-
-
-/* ---------------- MAIN CONTEÚDO ---------------- */
-
-#borda img {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    margin-right: 3px;
 }
 
 
@@ -278,68 +166,126 @@ main {
 
 /* ---------------- BOTÕES HELP ---------------- */
 
-.main #botão1,
-#botão2,
-#botão3 {
-    margin-left: calc((50% - 100px) - 15%);
-    position: absolute;
-}
-
-.main #botão4,
-#botão5 {
-    margin-left: calc((50% - 100px) + 15%);
-    position: absolute;
-}
-
-.main #botão1,
-.main #botão5 {
-    margin-top: 3%;
-}
-
-.main #botão2,
-.main #botão4 {
-    margin-top: 17%;
-}
-
-.main #botão3 {
-    margin-top: 31%;
-}
-
 
 /* ---------------- BOTÕES HELP ---------------- */
 
+#titulo {
+    margin-left: 28%;
+    padding-top: 3%;
+    color: white;
+}
+
+#maps,
+#dash {
+    position: absolute;
+    margin-left: 18%;
+    color: white;
+}
+
+#maps {
+    margin-top: 5%;
+}
+
+#maps h2,
+#dash h2 {
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+
+#maps p,
+#dash p {
+    margin-bottom: 3%;
+    margin-top: 1.5%;
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+#maps a,
+#dash a {
+    color: rgb(103, 103, 202);
+}
+
+#dash {
+    margin-top: 23%;
+}
+
+.p_border {
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, rgb(65, 170, 38), rgb(50, 189, 15));
+    border-image-slice: 2;
+    height: 100%;
+    border-left: none;
+    border-right: none;
+}
+
 
 /* ---------------- BOTÕES CONTEUDO ---------------- */
 
-#botão_des,
-#botão_que,
-#botão_pol {
-    position: absolute;
-    margin-left: calc(50% - 100px);
-}
-
 #botão_des {
-    margin-top: 3%;
+    margin-top: 40px;
+    margin-right: 0;
+    position: absolute;
 }
 
 #botão_que {
-    margin-top: 17%;
+    margin-top: 240px;
+    margin-right: 0;
+    position: absolute;
 }
 
 #botão_pol {
-    margin-top: 31%;
+    margin-top: 440px;
+    margin-right: 0;
+    position: absolute;
 }
 
 
 /* ---------------- BOTÕES CONTEUDO ---------------- */
 
+
+/* ---------------- INICIO BOTÕES MENU ---------------- */
+
+#botão1 {
+    margin-top: 40px;
+    margin-right: 35%;
+    position: absolute;
+}
+
+#botão2 {
+    margin-top: 240px;
+    margin-right: 35%;
+    position: absolute;
+}
+
+#botão3 {
+    margin-top: 440px;
+    margin-right: 35%;
+    position: absolute;
+}
+
+#botão4 {
+    margin-top: 40px;
+    margin-left: 35%;
+    position: absolute;
+}
+
+#botão5 {
+    margin-top: 240px;
+    margin-left: 35%;
+    position: absolute;
+}
+
 .btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
     width: 200px;
     height: 150px;
     border-radius: 25px;
     background-color: rgba(209, 209, 209, 0.925);
     text-align: center;
-    margin-bottom: 10px;
     transition: all 0.5s ease-in-out;
     z-index: 1;
     box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.678);
@@ -360,46 +306,57 @@ main {
 .btn img {
     width: 100px;
     height: 100px;
-    margin-left: 25%;
-    margin-right: 50%;
-    margin-top: 5%;
+    display: flex;
+    margin-top: 3%;
 }
 
 .btn p {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
     color: rgb(0, 0, 0);
 }
 
+
+/* ---------------- FIM BOTÕES MENU ---------------- */
+
+
+/* ---------------- INICIO BOTÃO VOLTAR ---------------- */
+
 .btn-back {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin-right: 7px;
+    margin-left: 10px;
     width: 40px;
     height: 40px;
     background-color: rgba(151, 149, 149, 0.096);
     border-radius: 25px;
-    margin-left: 10px;
-    margin-top: 13px;
-    position: absolute;
     transition: all 0.5s ease-in-out;
     box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.671)
 }
 
 .btn-back p {
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: center;
     color: rgba(0, 0, 0, 0);
     opacity: 0%;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-back img {
-    position: absolute;
-    top: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
     width: 24px;
     height: 24px;
-    border-radius: 45%;
-    margin-left: 10px;
+    border-radius: 40%;
+    margin-left: 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .btn-back:hover {
@@ -413,18 +370,16 @@ main {
 
 .btn-back:hover p {
     transition: all 0.5s ease-in-out;
-    display: block;
-    margin-top: 10px;
-    margin-left: 50%;
-    margin-right: auto;
     z-index: 0;
     color: rgba(209, 209, 209, 0.623);
     opacity: 100%;
+    margin-left: 30px;
 }
 
 .btn-back:hover img {
     transition: all 0.5s ease-in-out;
     transform: rotate(-360deg);
+    margin-left: -50%;
 }
 
 .btn-back:active {
@@ -433,31 +388,60 @@ main {
 }
 
 
+/* ---------------- FIM BOTÃO VOLTAR ---------------- */
+
+
 /* ---------------- BOTÕES ---------------- */
 
 
 /* ---------------- CORPO ---------------- */
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    /* padding-bottom: 2.5rem; */
+    /* altura do rodapé */
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    /* altura do rodapé */
+}
+
 
 /* ---------------- RODAPÉ ---------------- */
 
 footer {
-    margin-top: 8px;
-    background-color: rgba(2, 124, 2, 0.719);
+    display: flex;
+    bottom: 0;
     width: 100%;
-    height: 25px;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    font-size: 15px;
-    text-align: center;
-    color: whitesmoke;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.548);
+    height: 40px;
+    background-color: darkgreen;
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.459);
 }
 
 footer p {
-    margin-top: 0.3%;
-    position: absolute;
-    margin-left: calc(50% - 90px);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 20px;
+    color: white;
+    background-color: darkgreen;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.678);
+    border-radius: 25px;
+    border-width: 4px;
+    border-color: green;
+    font-size: 16px;
 }
 
 
