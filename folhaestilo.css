@@ -4,6 +4,52 @@
     box-sizing: border-box;
 }
 
+@media only screen and (min-width: 350px) and (max-width: 650px) {
+    #botão1,
+    #botão2,
+    #botão3 {
+        left: -10%;
+    }
+    #botão1,
+    #botão5 {
+        top: 13%;
+    }
+    #botão4,
+    #botão5 {
+        left: 10%;
+    }
+    #botão2,
+    #botão4 {
+        top: 33%;
+    }
+    #botão3 {
+        top: 53%;
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1000px) {
+    #botão1,
+    #botão2,
+    #botão3 {
+        left: -10%;
+    }
+    #botão1,
+    #botão5 {
+        top: 10%;
+    }
+    #botão4,
+    #botão5 {
+        left: 5%;
+    }
+    #botão2,
+    #botão4 {
+        top: 20%;
+    }
+    #botão3 {
+        top: 30%;
+    }
+}
+
 
 /* ---------------- BackGround ---------------- */
 
