@@ -571,6 +571,7 @@ div #fotos{
 .page_fatec_container{
     position: relative;
     min-height: 200vh;
+    
 }
 .page_fatec_wrap .titulo{
     min-height: 200vh;
