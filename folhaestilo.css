@@ -10,7 +10,7 @@
 /* ---------------- BackGround ---------------- */
 
 body {
-    background-image: url("environment.jpg");
+    background-image: url("/imagens/environment.jpg");
     background-image: opacity .1;
     background-repeat: no-repeat;
     z-index: 0.2;
