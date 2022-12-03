@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.page_fatec_container {
+    position: relative;
+    min-height: 200vh;
+}
+
+.page_fatec_wrap .titulo {
+    min-height: 200vh;
+}
+
+.page_queimadas_container {
+    position: relative;
+    min-height: 200vh;
+}
+
+.page_queimadas_wrap .titulo {
+    min-height: 200vh;
+}
+
+.page_conteudo_container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.page_conteudo_wrap {
+    min-height: 100vh;
+}
+
+.page_index_container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.page_index_wrap {
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 368px) {
+    .page_index_wrap {
+        height: 180vh;
+    }
+    /* ----------------------------INDEX.HTML---------------------------- */
+    #botão1,
+    #botão2,
+    #botão3,
+    #botão4,
+    #botão5 {
+        margin-left: 35%;
+    }
+    #botão4 {
+        margin-top: 640px;
+        margin-left: 0%;
+    }
+    #botão5 {
+        position: absolute;
+        margin-top: 840px;
+        margin-left: 0%;
+    }
+    /* ----------------------------INDEX.HTML---------------------------- */
+    /* ----------------------------CONTEUDO.HTML---------------------------- */
+    #botão_des,
+    #botão_que,
+    #botão_pol {
+        margin-left: 10%;
+    }
+    /* ----------------------------QUEIMADAS.HTML---------------------------- */
+    .page_queimadas_wrap {
+        min-height: 310vh;
+    }
+    .page_queimadas_container {}
+    #titulo h1 {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        margin-left: 0;
+    }
+    #textos h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        font-size: 25px;
+    }
+    #textos .texto1 {
+        display: block;
+        margin: 5px;
+        position: relative;
+        align-items: left;
+        margin-left: 0;
+        width: fit-content;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto1 p {
+        position: relative;
+        display: block;
+        margin-left: 15px;
+        margin-top: 0;
+        width: 300px;
+    }
+    #textos .texto1 .queimada img {
+        position: relative;
+        margin-left: 0;
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+    #textos .texto2 p {
+        position: relative;
+        display: flex;
+        margin-left: 10px;
+        margin-top: 0;
+        width: 300px;
+    }
+    #textos .texto2 {
+        display: block;
+        margin-left: 0;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto2 .causa img {
+        margin-top: 10px;
+        border-radius: 25px;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin-left: 0px;
+    }
+    /* ----------------------------QUEIMADAS.HTML---------------------------- */
+    /* ----------------------------CONTEUDO.HTML---------------------------- */
+}
+
+@media screen and (max-width: 514px) and (min-width: 369px) {
+    .page_index_wrap {
+        height: 180vh;
+    }
+    .main {
+        display: block;
+        align-content: center;
+        flex-direction: column;
+        background-color: rgba(222, 184, 135, 0);
+    }
+    /* ----------------------------INDEX.HTML---------------------------- */
+    #botão1,
+    #botão2,
+    #botão3,
+    #botão4,
+    #botão5 {
+        margin-left: 35%;
+    }
+    #botão4 {
+        margin-top: 640px;
+        margin-left: 35%;
+    }
+    #botão5 {
+        position: absolute;
+        margin-top: 840px;
+        margin-left: 35%;
+    }
+    /* ----------------------------INDEX.HTML---------------------------- */
+    /* ----------------------------CONTEUDO.HTML---------------------------- */
+    #botão_des,
+    #botão_que,
+    #botão_pol {
+        margin-left: 28%;
+    }
+    /* ----------------------------QUEIMADAS.HTML---------------------------- */
+    .page_queimadas_wrap {
+        min-height: 310vh;
+    }
+    #titulo h1 {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        margin-left: 0;
+    }
+    #textos h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        font-size: 25px;
+    }
+    #textos .texto1 {
+        display: block;
+        margin: 5px;
+        position: relative;
+        align-items: left;
+        margin-left: 0;
+        width: fit-content;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto1 p {
+        position: relative;
+        display: block;
+        margin-left: 15px;
+        margin-top: 0;
+        width: 300px;
+    }
+    #textos .texto1 .queimada img {
+        position: relative;
+        margin-left: 0;
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+    #textos .texto2 p {
+        position: relative;
+        display: flex;
+        margin-left: 10px;
+        margin-top: 0;
+        width: 300px;
+    }
+    #textos .texto2 {
+        display: block;
+        margin-left: 0;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto2 .causa img {
+        margin-top: 10px;
+        border-radius: 25px;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin-left: 0px;
+    }
+    /* ----------------------------QUEIMADAS.HTML---------------------------- */
+    /* ----------------------------CONTEUDO.HTML---------------------------- */
+}
+
+@media screen and (max-width: 645px) and (min-width: 515px) {
+    .page_index_wrap {
+        height: 180vh;
+    }
+    .main {
+        display: block;
+        align-content: center;
+        flex-direction: column;
+        background-color: rgba(222, 184, 135, 0);
+    }
+    /* ----------------------------INDEX.HTML---------------------------- */
+    #botão1,
+    #botão2,
+    #botão3,
+    #botão4,
+    #botão5 {
+        align-self: center;
+        margin-left: 28%;
+    }
+    #botão4 {
+        position: absolute;
+        margin-top: 640px;
+    }
+    #botão5 {
+        position: absolute;
+        margin-top: 840px;
+    }
+    /* ----------------------------INDEX.HTML---------------------------- */
+    /* ----------------------------CONTEUDO.HTML---------------------------- */
+    #botão_des,
+    #botão_que,
+    #botão_pol {
+        margin-left: 28%;
+    }
+    /* ----------------------------QUEIMADAS.HTML---------------------------- */
+    .page_queimadas_wrap {
+        min-height: 310vh;
+    }
+    #titulo h1 {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        margin-left: 0;
+    }
+    #textos h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        font-size: 25px;
+    }
+    #textos .texto1 {
+        display: block;
+        margin: 5px;
+        position: relative;
+        align-items: left;
+        margin-left: 0;
+        width: fit-content;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto1 p {
+        position: relative;
+        display: block;
+        margin-left: 10px;
+        margin-top: 0;
+        width: 500px;
+    }
+    #textos .texto1 .queimada img {
+        position: relative;
+        margin-left: 0;
+        width: 500px;
+        height: 300px;
+        object-fit: cover;
+    }
+    #textos .texto2 p {
+        position: relative;
+        display: flex;
+        margin-left: 0px;
+        margin-top: 0;
+        width: 500px;
+    }
+    #textos .texto2 {
+        display: block;
+        margin-left: 0;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto2 .causa img {
+        margin-top: 10px;
+        border-radius: 25px;
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        margin-left: 40px;
+    }
+    /* ----------------------------QUEIMADAS.HTML---------------------------- */
+    /* ----------------------------CONTEUDO.HTML---------------------------- */
+}
