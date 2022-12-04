@@ -300,29 +300,31 @@ header h1 img {
 
 #botão_des {
     margin-top: 40px;
-    margin-right: 250px;
+    margin-right: 350px;
     position: absolute;
 }
 
 #botão_que {
     margin-top: 240px;
-    margin-right: 250px;
+    margin-right: 350px;
     position: absolute;
 }
 
 #botão_pol {
     margin-top: 440px;
-    margin-right: 250px;
+    margin-right: 350px;
     position: absolute;
 }
+
 #botão_lixo {
     margin-top: 40px;
-    margin-left: 250px;
+    margin-left: 350px;
     position: absolute;
 }
+
 #botão_solo {
     margin-top: 240px;
-    margin-left: 250px;
+    margin-left: 350px;
     position: absolute;
 }
 
@@ -486,116 +488,59 @@ header h1 img {
 .link_visitar {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-self: center;
-    margin-left: 40%;
-    margin-top: 50%;
-}
-
-.titulo h1.fatec {
-    margin-left: 37%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .link_visitar .logofatec {
-    width: 280px;
-    height: 150px;
-    border-style: solid;
-    border-width: 0.5px;
-    border-left: none;
-    border-right: none;
-    border-image: white;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.514);
     border-radius: 25px;
     background-image: linear-gradient(90deg, rgba(20, 20, 20, 0.459), rgba(255, 255, 255, 0.445), rgba(20, 20, 20, 0.459));
     transition: all 0.5s ease-in-out;
+    align-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 .link_visitar p {
     position: absolute;
     color: white;
-    margin-top: 170px;
+    margin-top: 180px;
+    font-size: 20px;
 }
 
 .link_visitar p a {
     color: rgb(103, 103, 202);
 }
 
-.cliqueaqui:hover .logofatec {
-    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.514);
-}
-
 div #fotos {
-    position: absolute;
-    margin-top: 150px;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    display: flex;
+    margin-left: 0;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: rgba(253, 253, 253, 0);
+    padding: 10px;
+    width: 1300px;
 }
 
-.gallery_img {
-    width: 100%;
-    height: 100%;
+#fotos .picture img {
+    align-content: center;
+    border-radius: 25px;
+    width: 600px;
+    height: 350px;
     object-fit: cover;
-    border-radius: 25px;
-    border-style: solid;
-    border-color: white;
-    border-width: .5px;
-    box-shadow: 0px 0px 20px 10px rgba(104, 104, 104, 0.301);
+    margin: 10px;
+    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.432);
 }
 
-.gallery_item--1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.gallery_item--2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.gallery_item--3 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 6;
-}
-
-.gallery_item--4 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 6;
-}
-
-.gallery_item--5 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 9;
-}
-
-.gallery_item--6 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 6;
-    grid-row-end: 9;
-}
-
-.gallery_item {
-    border-radius: 25px;
-}
-
-.gallery_item:hover {
-    transition: all 0.5s ease-in-out;
-    box-shadow: 0px 0px 20px 10px rgba(230, 230, 230, 0.301);
+.picture #fatec:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.671);
     z-index: 1;
 }
 
@@ -603,7 +548,7 @@ div #fotos {
 /* ---------------- FIM FATEC ---------------- */
 
 
-/* ---------------- INICIO QUEIMADAS ---------------- */
+/* ---------------- INICIO PADRÃO ---------------- */
 
 #textos {
     background-color: rgba(255, 228, 196, 0);
@@ -631,8 +576,8 @@ div #fotos {
 #textos .texto1 {
     display: flex;
     margin-left: 0;
-    align-items:baseline;
-    flex-direction:column;
+    align-items: baseline;
+    flex-direction: column;
     border-radius: 25px;
     background-color: rgba(253, 253, 253, 0);
     padding: 10px;
@@ -675,7 +620,6 @@ div #fotos {
 }
 
 #textos .texto1 .oqueé img {
-
     align-content: center;
     border-radius: 25px;
     width: 500px;
@@ -684,7 +628,8 @@ div #fotos {
     margin: 10px;
     box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.432);
 }
-.texto1 .oqueé #imgoqueé:hover{
+
+.texto1 .oqueé #imgoqueé:hover {
     transition: all .2s ease-in-out;
     transform: scale(1.05);
     box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.671);
@@ -694,13 +639,14 @@ div #fotos {
 #textos .texto2 {
     display: flex;
     margin-left: 0;
-    align-items:baseline;
-    flex-direction:column;
+    align-items: baseline;
+    flex-direction: column;
     border-radius: 25px;
     background-color: rgba(253, 253, 253, 0);
     padding: 10px;
     width: 1000px;
 }
+
 #textos .texto2 p {
     text-indent: 15px;
     padding: 20px;
@@ -734,7 +680,8 @@ div #fotos {
     box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.432);
     transition: all .2s ease-in-out;
 }
-.texto2 .causa #imgcausa:hover{
+
+.texto2 .causa #imgcausa:hover {
     transition: all .2s ease-in-out;
     transform: scale(1.05);
     box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.671);
@@ -744,13 +691,14 @@ div #fotos {
 #textos .texto3 {
     display: flex;
     margin-left: 0;
-    align-items:baseline;
-    flex-direction:column;
+    align-items: baseline;
+    flex-direction: column;
     border-radius: 25px;
     background-color: rgba(253, 253, 253, 0);
     padding: 10px;
     width: 1000px;
 }
+
 #textos .texto3 p {
     padding: 20px;
     width: 550px;
@@ -758,6 +706,7 @@ div #fotos {
     display: flex;
     align-self: center;
     align-items: center;
+    object-position: center;
     border-radius: 25px;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.219), rgba(146, 83, 0, 0.418), rgba(209, 120, 3, 0.418), rgba(255, 0, 0, 0.425), rgba(82, 82, 82, 0.322));
     box-shadow: 0px 0px 22px 10px rgba(161, 161, 161, 0.295);
@@ -781,14 +730,86 @@ div #fotos {
     object-fit: fill;
     margin: 10px;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.432);
-    transition: all .2s ease-in-out;    
+    transition: all .2s ease-in-out;
 }
-.texto3 .evitar #imgevitar:hover{
+
+.texto3 .evitar #imgevitar:hover {
     transition: all .2s ease-in-out;
     transform: scale(1.05);
     box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.671);
     z-index: 1;
 }
+
+
+/* ---------------- FIM PADRÃO ---------------- */
+
+
+/* ---------------- INICIO SOLO ---------------- */
+
+#textos .texto2 .causasolo {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding: 10px;
+    margin-right: 0;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+#textos .texto2 .causasolo img {
+    border-radius: 25px;
+    width: 400px;
+    height: 300px;
+    object-fit: fill;
+    margin: 10px;
+    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.432);
+    transition: all .2s ease-in-out;
+}
+
+.texto2 .causasolo #imgcausasolo:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.671);
+    z-index: 1;
+}
+
+
+/* ---------------- FIM SOLO ---------------- */
+
+
+/* ---------------- INICIO DESMATAMENTO ---------------- */
+
+#textos .texto2 .causadesm {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding: 10px;
+    margin-right: 0;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+#textos .texto2 .causadesm img {
+    border-radius: 25px;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.432);
+    transition: all .2s ease-in-out;
+}
+
+.texto2 .causadesm #imgcausadesm:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.671);
+    z-index: 1;
+}
+
+
+/* ---------------- FIM DESMATAMENTO ---------------- */
+
+
+/* ---------------- INICIO HIDRICA ---------------- */
+
 #textos .texto3 .HidricaEvitar img {
     border-radius: 25px;
     width: 450px;
@@ -796,16 +817,18 @@ div #fotos {
     object-fit: fill;
     margin: 10px;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.432);
-    transition: all .2s ease-in-out;    
+    transition: all .2s ease-in-out;
 }
-.texto3 .HidricaEvitar #imgeHidricaEvitar:hover{
+
+.texto3 .HidricaEvitar #imgeHidricaEvitar:hover {
     transition: all .2s ease-in-out;
     transform: scale(1.05);
     box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.671);
     z-index: 1;
 }
 
-/* ---------------- FIM QUEIMADAS ---------------- */
+
+/* ---------------- FIM HIDRICA ---------------- */
 
 
 /* ---------------- CORPO ---------------- */
