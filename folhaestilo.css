@@ -300,19 +300,29 @@ header h1 img {
 
 #botão_des {
     margin-top: 40px;
-    margin-right: 0;
+    margin-right: 250px;
     position: absolute;
 }
 
 #botão_que {
     margin-top: 240px;
-    margin-right: 0;
+    margin-right: 250px;
     position: absolute;
 }
 
 #botão_pol {
     margin-top: 440px;
-    margin-right: 0;
+    margin-right: 250px;
+    position: absolute;
+}
+#botão_lixo {
+    margin-top: 40px;
+    margin-left: 250px;
+    position: absolute;
+}
+#botão_solo {
+    margin-top: 240px;
+    margin-left: 250px;
     position: absolute;
 }
 
@@ -620,24 +630,22 @@ div #fotos {
 
 #textos .texto1 {
     display: flex;
-    align-items: left;
-    justify-items: center;
-    margin-right: 0;
-    width: 100%;
-    flex-direction: column;
+    margin-left: 0;
+    align-items:baseline;
+    flex-direction:column;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(253, 253, 253, 0);
     padding: 10px;
-    text-indent: 10px;
+    width: 1300px;
 }
 
 #textos .texto1 p {
+    text-indent: 15px;
+    display: flex;
+    align-self: center;
     padding: 20px;
     border-radius: 25px;
-    position: absolute;
-    margin-left: 550px;
     width: 500px;
-    margin-top: 220px;
     /* background-color: rgba(0, 0, 0, 0.452); */
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.219), rgba(146, 83, 0, 0.418), rgba(209, 120, 3, 0.418), rgba(255, 0, 0, 0.425), rgba(82, 82, 82, 0.322));
     box-shadow: 0px 0px 22px 10px rgba(124, 124, 124, 0.308);
@@ -657,34 +665,47 @@ div #fotos {
     }
 }
 
-#textos .texto1 .queimada {
+#textos .texto1 .oqueé {
     display: flex;
+    flex-direction: row;
+    align-self: center;
     padding: 10px;
+    margin-right: 0;
+    background-color: rgba(240, 248, 255, 0);
 }
 
-#textos .texto1 .queimada img {
+#textos .texto1 .oqueé img {
+
+    align-content: center;
     border-radius: 25px;
     width: 500px;
-    height: 300px;
-    object-fit: cover;
+    height: 320px;
+    object-fit: fill;
+    margin: 10px;
     box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.432);
+}
+.texto1 .oqueé #imgoqueé:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.671);
+    z-index: 1;
 }
 
 #textos .texto2 {
     display: flex;
-    margin-left: 150px;
-    align-items: center;
-    flex-direction: row;
+    margin-left: 0;
+    align-items:baseline;
+    flex-direction:column;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(253, 253, 253, 0);
     padding: 10px;
-    text-indent: 10px;
+    width: 1000px;
 }
-
 #textos .texto2 p {
+    text-indent: 15px;
     padding: 20px;
-    width: 350px;
-    height: 400px;
+    width: 450px;
+    height: 300px;
     display: flex;
     align-self: center;
     align-items: center;
@@ -697,18 +718,92 @@ div #fotos {
 
 #textos .texto2 .causa {
     display: flex;
+    flex-direction: row;
+    align-self: center;
     padding: 10px;
+    margin-right: 0;
+    background-color: rgba(240, 248, 255, 0);
 }
 
 #textos .texto2 .causa img {
     border-radius: 25px;
     width: 400px;
-    height: 400px;
+    height: 320px;
     object-fit: cover;
-    margin-left: 50px;
+    margin: 10px;
     box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.432);
+    transition: all .2s ease-in-out;
+}
+.texto2 .causa #imgcausa:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.671);
+    z-index: 1;
 }
 
+#textos .texto3 {
+    display: flex;
+    margin-left: 0;
+    align-items:baseline;
+    flex-direction:column;
+    border-radius: 25px;
+    background-color: rgba(253, 253, 253, 0);
+    padding: 10px;
+    width: 1000px;
+}
+#textos .texto3 p {
+    padding: 20px;
+    width: 550px;
+    height: 300px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    border-radius: 25px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.219), rgba(146, 83, 0, 0.418), rgba(209, 120, 3, 0.418), rgba(255, 0, 0, 0.425), rgba(82, 82, 82, 0.322));
+    box-shadow: 0px 0px 22px 10px rgba(161, 161, 161, 0.295);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+}
+
+#textos .texto3 .evitar {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding: 10px;
+    margin-right: 0;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+#textos .texto3 .evitar img {
+    border-radius: 25px;
+    width: 500px;
+    height: 320px;
+    object-fit: fill;
+    margin: 10px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.432);
+    transition: all .2s ease-in-out;    
+}
+.texto3 .evitar #imgevitar:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.671);
+    z-index: 1;
+}
+#textos .texto3 .HidricaEvitar img {
+    border-radius: 25px;
+    width: 450px;
+    height: 320px;
+    object-fit: fill;
+    margin: 10px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.432);
+    transition: all .2s ease-in-out;    
+}
+.texto3 .HidricaEvitar #imgeHidricaEvitar:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.671);
+    z-index: 1;
+}
 
 /* ---------------- FIM QUEIMADAS ---------------- */
 
