@@ -8,14 +8,17 @@
     <link rel="stylesheet" type="text/css" href="folhaestilo.css">
     <link rel="stylesheet" type="text/css" href="media.css">
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZ28Z8Y1GW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZ28Z8Y1GW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-YZ28Z8Y1GW');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YZ28Z8Y1GW');
+    </script>
 </head>
 
 <body>
@@ -25,7 +28,7 @@
                 <h1><img id="imgheader" src="environment.png" alt=""> ECOLOG</h1>
             </header>
             <main>
-                <div class="main">
+                <div id="index-main" class="main">
                     <span id="botão1" class="btn" onclick="window.location.href='Conteudo.html';"><p>Conteúdo</p><img src="checklist.png" alt=""></span>
                     <span id="botão2" class="btn" onclick="window.location.href='Maps.html';"><p>Maps</p><img src="brazil.png" alt=""></span>
                     <span id="botão3" class="btn" onclick="window.location.href='Fatec.html';"><p>Fatec Itu</p><img src="faculdade.png" alt=""></span>

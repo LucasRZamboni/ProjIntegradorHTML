@@ -45,44 +45,85 @@
     min-height: 100vh;
 }
 
-@media screen and (max-width: 368px) {
+@media screen and (min-width: 320px) and (max-width: 480.99px) {
     .page_index_wrap {
-        height: 180vh;
+        height: 100%;
+    }
+    .page_queimadas_wrap {
+        height: 100%;
+    }
+    .page_desmatamento_wrap {
+        height: 100%;
     }
     /* ----------------------------INDEX.HTML---------------------------- */
+    #main-index {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin: 20px;
+    }
     #botão1,
     #botão2,
     #botão3,
     #botão4,
     #botão5 {
-        margin-left: 35%;
-    }
-    #botão4 {
-        margin-top: 640px;
-        margin-left: 0%;
-    }
-    #botão5 {
-        position: absolute;
-        margin-top: 840px;
-        margin-left: 0%;
+        margin: 20px;
+        position: relative;
     }
     /* ----------------------------INDEX.HTML---------------------------- */
     /* ----------------------------CONTEUDO.HTML---------------------------- */
+    #main-conteudo {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+    }
     #botão_des,
     #botão_que,
-    #botão_pol {
-        margin-left: 10%;
+    #botão_pol,
+    #botão_lixo,
+    #botão_solo {
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
     }
     /* ----------------------------QUEIMADAS.HTML---------------------------- */
-    .page_queimadas_wrap {
-        min-height: 310vh;
+    #main-queimadas {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+    }
+    #main-poluição {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+    }
+    #main-desmatamento {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
     }
     .page_queimadas_container {}
     #titulo h1 {
         display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
         margin-top: 20px;
-        justify-content: center;
+        margin-bottom: 20px;
         margin-left: 0;
+        font-size: 25px;
+    }
+    #titulo {
+        width: 100%;
+    }
+    #textos {
+        width: 100%;
     }
     #textos h1 {
         margin-top: 20px;
@@ -91,89 +132,550 @@
         font-size: 25px;
     }
     #textos .texto1 {
-        display: block;
-        margin: 5px;
-        position: relative;
-        align-items: left;
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        width: 100%;
         margin-left: 0;
-        width: fit-content;
         background-color: rgba(250, 235, 215, 0);
     }
     #textos .texto1 p {
         position: relative;
-        display: block;
-        margin-left: 15px;
-        margin-top: 0;
-        width: 300px;
-    }
-    #textos .texto1 .queimada img {
-        position: relative;
+        display: flex;
         margin-left: 0;
-        width: 300px;
-        height: 200px;
+        margin-top: 0;
+        width: fit-content;
+    }
+    #textos .texto1 .oqueé {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto1 .oqueé img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
     #textos .texto2 p {
         position: relative;
         display: flex;
-        margin-left: 10px;
+        margin-left: 0;
         margin-top: 0;
-        width: 300px;
+        width: fit-content;
     }
     #textos .texto2 {
-        display: block;
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        width: 100%;
         margin-left: 0;
         background-color: rgba(250, 235, 215, 0);
     }
+    #textos .texto2 .causa {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
     #textos .texto2 .causa img {
-        margin-top: 10px;
-        border-radius: 25px;
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        margin-left: 0px;
+    }
+    #textos .texto2 .causadesm {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto2 .causadesm img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #textos .texto3 p {
+        position: relative;
+        display: flex;
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #textos .texto3 {
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto3 .evitar {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto3 .evitar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #textos .texto3 .HidricaEvitar {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto3 .HidricaEvitar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     /* ----------------------------QUEIMADAS.HTML---------------------------- */
     /* ----------------------------CONTEUDO.HTML---------------------------- */
 }
 
-@media screen and (max-width: 514px) and (min-width: 369px) {
+@media screen and (max-width: 768.99px) and (min-width: 480px) {
     .page_index_wrap {
-        height: 180vh;
+        height: 100%;
     }
-    .main {
-        display: block;
-        align-content: center;
-        flex-direction: column;
-        background-color: rgba(222, 184, 135, 0);
+    .page_queimadas_wrap {
+        height: 100%;
+    }
+    .page_desmatamento_wrap {
+        height: 100%;
     }
     /* ----------------------------INDEX.HTML---------------------------- */
+    #main-index {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin: 20px;
+    }
     #botão1,
     #botão2,
     #botão3,
     #botão4,
     #botão5 {
-        margin-left: 35%;
-    }
-    #botão4 {
-        margin-top: 640px;
-        margin-left: 35%;
-    }
-    #botão5 {
-        position: absolute;
-        margin-top: 840px;
-        margin-left: 35%;
+        margin: 20px;
+        position: relative;
     }
     /* ----------------------------INDEX.HTML---------------------------- */
     /* ----------------------------CONTEUDO.HTML---------------------------- */
+    #main-conteudo {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+    }
     #botão_des,
     #botão_que,
-    #botão_pol {
-        margin-left: 28%;
+    #botão_pol,
+    #botão_lixo,
+    #botão_solo {
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
     }
     /* ----------------------------QUEIMADAS.HTML---------------------------- */
+    #main-queimadas {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+    }
+    #main-poluição {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+    }
+    #main-desmatamento {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+    }
+    .page_queimadas_container {}
+    #titulo h1 {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        font-size: 25px;
+    }
+    #titulo {
+        width: 100%;
+    }
+    #textos {
+        width: 100%;
+    }
+    #textos h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        font-size: 25px;
+    }
+    #textos .texto1 {
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 0;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto1 p {
+        position: relative;
+        display: flex;
+        margin-left: 0;
+        margin-top: 0;
+        width: fit-content;
+    }
+    #textos .texto1 .oqueé {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto1 .oqueé img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #textos .texto2 p {
+        position: relative;
+        display: flex;
+        margin-left: 0;
+        margin-top: 0;
+        width: fit-content;
+    }
+    #textos .texto2 {
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 0;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto2 .causa {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto2 .causa img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #textos .texto2 .causadesm {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto2 .causadesm img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #textos .texto3 p {
+        position: relative;
+        display: flex;
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #textos .texto3 {
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 0;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto3 .evitar {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto3 .evitar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #textos .texto3 .HidricaEvitar {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto3 .HidricaEvitar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* ----------------------------QUEIMADAS.HTML---------------------------- */
+    /* ----------------------------CONTEUDO.HTML---------------------------- */
+}
+
+@media screen and (max-width: 1024.99px) and (min-width: 769px) {
+    .page_index_wrap {
+        height: 100%;
+    }
     .page_queimadas_wrap {
-        min-height: 310vh;
+        height: 100%;
+    }
+    .page_desmatamento_wrap {
+        height: 100%;
+    }
+    /* ----------------------------INDEX.HTML---------------------------- */
+    #main-index {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin: 20px;
+    }
+    #botão1,
+    #botão2,
+    #botão3,
+    #botão4,
+    #botão5 {
+        margin: 20px;
+        position: relative;
+    }
+    /* ----------------------------INDEX.HTML---------------------------- */
+    /* ----------------------------CONTEUDO.HTML---------------------------- */
+    #main-conteudo {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+    }
+    #botão_des,
+    #botão_que,
+    #botão_pol,
+    #botão_lixo,
+    #botão_solo {
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    /* ----------------------------QUEIMADAS.HTML---------------------------- */
+    #main-queimadas {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+    }
+    #main-poluição {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+    }
+    #main-desmatamento {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+    }
+    .page_queimadas_container {}
+    #titulo h1 {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        font-size: 25px;
+    }
+    #titulo {
+        width: 100%;
+    }
+    #textos {
+        width: 100%;
+    }
+    #textos h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        font-size: 25px;
+    }
+    #textos .texto1 {
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 0;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto1 p {
+        position: relative;
+        display: flex;
+        margin-left: 0;
+        margin-top: 0;
+        width: fit-content;
+    }
+    #textos .texto1 .oqueé {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto1 .oqueé img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #textos .texto2 p {
+        position: relative;
+        display: flex;
+        margin-left: 0;
+        margin-top: 0;
+        width: fit-content;
+    }
+    #textos .texto2 {
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 0;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto2 .causa {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto2 .causa img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #textos .texto2 .causadesm {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto2 .causadesm img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #textos .texto3 p {
+        position: relative;
+        display: flex;
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #textos .texto3 {
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 0;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto3 .evitar {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto3 .evitar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #textos .texto3 .HidricaEvitar {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #textos .texto3 .HidricaEvitar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* ----------------------------QUEIMADAS.HTML---------------------------- */
+    /* ----------------------------CONTEUDO.HTML---------------------------- */
+}
+
+@media screen and (max-width: 1200.99px) and (min-width: 1025px) {
+    .page_index_wrap {
+        height: 100%;
+    }
+    /* ----------------------------INDEX.HTML---------------------------- */
+    /* #main-index {
+        display: flex;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        margin: 20px;
+    }
+    #botão1,
+    #botão2,
+    #botão3,
+    #botão4,
+    #botão5 {
+        margin: 20px;
+        position: relative;
+    } */
+    /* ----------------------------INDEX.HTML---------------------------- */
+    /* ----------------------------CONTEUDO.HTML---------------------------- */
+    /* ----------------------------QUEIMADAS.HTML---------------------------- */
+    .page_queimadas_wrap {
+        min-height: 100%;
     }
     #titulo h1 {
         display: flex;
@@ -188,123 +690,30 @@
         font-size: 25px;
     }
     #textos .texto1 {
-        display: block;
-        margin: 5px;
-        position: relative;
-        align-items: left;
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        width: 70%;
         margin-left: 0;
-        width: fit-content;
         background-color: rgba(250, 235, 215, 0);
     }
     #textos .texto1 p {
-        position: relative;
-        display: block;
-        margin-left: 15px;
-        margin-top: 0;
-        width: 300px;
-    }
-    #textos .texto1 .queimada img {
-        position: relative;
-        margin-left: 0;
-        width: 300px;
-        height: 200px;
-        object-fit: cover;
-    }
-    #textos .texto2 p {
-        position: relative;
         display: flex;
-        margin-left: 10px;
-        margin-top: 0;
-        width: 300px;
-    }
-    #textos .texto2 {
-        display: block;
-        margin-left: 0;
-        background-color: rgba(250, 235, 215, 0);
-    }
-    #textos .texto2 .causa img {
-        margin-top: 10px;
-        border-radius: 25px;
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        margin-left: 0px;
-    }
-    /* ----------------------------QUEIMADAS.HTML---------------------------- */
-    /* ----------------------------CONTEUDO.HTML---------------------------- */
-}
-
-@media screen and (max-width: 645px) and (min-width: 515px) {
-    .page_index_wrap {
-        height: 180vh;
-    }
-    .main {
-        display: block;
-        align-content: center;
-        flex-direction: column;
-        background-color: rgba(222, 184, 135, 0);
-    }
-    /* ----------------------------INDEX.HTML---------------------------- */
-    #botão1,
-    #botão2,
-    #botão3,
-    #botão4,
-    #botão5 {
         align-self: center;
-        margin-left: 28%;
+        object-position: center;
+        flex-direction: column;
+        margin: 20px;
+        width: 100%;
     }
-    #botão4 {
-        position: absolute;
-        margin-top: 640px;
-    }
-    #botão5 {
-        position: absolute;
-        margin-top: 840px;
-    }
-    /* ----------------------------INDEX.HTML---------------------------- */
-    /* ----------------------------CONTEUDO.HTML---------------------------- */
-    #botão_des,
-    #botão_que,
-    #botão_pol {
-        margin-left: 28%;
-    }
-    /* ----------------------------QUEIMADAS.HTML---------------------------- */
-    .page_queimadas_wrap {
-        min-height: 310vh;
-    }
-    #titulo h1 {
+    #textos .texto1 .oqueé img {
         display: flex;
-        margin-top: 20px;
-        justify-content: center;
-        margin-left: 0;
-    }
-    #textos h1 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 0;
-        font-size: 25px;
-    }
-    #textos .texto1 {
-        display: block;
-        margin: 5px;
-        position: relative;
-        align-items: left;
-        margin-left: 0;
-        width: fit-content;
-        background-color: rgba(250, 235, 215, 0);
-    }
-    #textos .texto1 p {
-        position: relative;
-        display: block;
-        margin-left: 10px;
-        margin-top: 0;
+        align-self: center;
+        object-position: center;
+        flex-direction: row;
         width: 500px;
-    }
-    #textos .texto1 .queimada img {
-        position: relative;
-        margin-left: 0;
-        width: 500px;
-        height: 300px;
+        height: 350px;
         object-fit: cover;
     }
     #textos .texto2 p {
@@ -315,17 +724,49 @@
         width: 500px;
     }
     #textos .texto2 {
-        display: block;
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        width: 70%;
         margin-left: 0;
         background-color: rgba(250, 235, 215, 0);
     }
     #textos .texto2 .causa img {
-        margin-top: 10px;
-        border-radius: 25px;
-        width: 400px;
-        height: 400px;
+        display: flex;
+        align-self: center;
+        object-position: center;
+        flex-direction: row;
+        width: 500px;
+        height: 350px;
         object-fit: cover;
-        margin-left: 40px;
+    }
+    #textos .texto3 p {
+        position: relative;
+        display: flex;
+        margin-left: 0px;
+        margin-top: 0;
+        width: 500px;
+    }
+    #textos .texto3 {
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        object-position: center;
+        align-items: center;
+        width: 70%;
+        margin-left: 0;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    #textos .texto3 .evitar img {
+        display: flex;
+        align-self: center;
+        object-position: center;
+        flex-direction: row;
+        width: 500px;
+        height: 350px;
+        object-fit: cover;
     }
     /* ----------------------------QUEIMADAS.HTML---------------------------- */
     /* ----------------------------CONTEUDO.HTML---------------------------- */
