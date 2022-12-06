@@ -108,11 +108,9 @@ header h1 img {
     object-position: center;
 }
 
-
 .titulo h2 {
     display: flex;
     align-self: center;
-    
     text-align: center;
     position: relative;
     color: white;
@@ -152,18 +150,20 @@ header h1 img {
     font-family: Gabriola;
     text-shadow: 0.5px 0.5px rgba(236, 236, 236, 0.336)
 }
-#main-titulo{
+
+#main-titulo {
     display: flex;
     flex-direction: column;
     align-self: center;
 }
+
 #ul_li {
     display: flex;
     margin-top: 20px;
     align-self: center;
     color: white;
     object-position: center;
-    background-color:rgba(0, 255, 255, 0);
+    background-color: rgba(0, 255, 255, 0);
     flex-direction: column;
     position: relative;
     width: 90%;
@@ -172,13 +172,14 @@ header h1 img {
 #ul_li ul li {
     border-radius: 25px;
     border-width: 1px;
-    width: 100%;
+    width: 90%;
     border-style: solid;
     display: flex;
     flex-direction: column;
     align-self: center;
     height: 90px;
     padding: 10px;
+    margin: 40px;
     border-left: none;
     border-right: none;
 }
@@ -205,6 +206,7 @@ header h1 img {
     margin-left: 100px;
     color: rgb(103, 103, 202);
 }
+
 #ul_li ul li .github {
     display: flex;
     position: absolute;
@@ -304,31 +306,31 @@ header h1 img {
 /* ---------------- BOTÕES CONTEUDO ---------------- */
 
 #botão_des {
-    margin-top: 40px;
+    margin-top: 150px;
     margin-right: 350px;
     position: absolute;
 }
 
 #botão_que {
-    margin-top: 240px;
+    margin-top: 350px;
     margin-right: 350px;
     position: absolute;
 }
 
 #botão_pol {
-    margin-top: 440px;
+    margin-top: 550px;
     margin-right: 350px;
     position: absolute;
 }
 
 #botão_lixo {
-    margin-top: 40px;
+    margin-top: 150px;
     margin-left: 350px;
     position: absolute;
 }
 
 #botão_solo {
-    margin-top: 240px;
+    margin-top: 350px;
     margin-left: 350px;
     position: absolute;
 }
@@ -340,32 +342,32 @@ header h1 img {
 /* ---------------- INICIO BOTÕES MENU ---------------- */
 
 #botão1 {
-    margin-top: 40px;
-    margin-right: 35%;
+    margin-top: 150px;
+    margin-right: 350px;
     position: absolute;
 }
 
 #botão2 {
-    margin-top: 240px;
-    margin-right: 35%;
+    margin-top: 350px;
+    margin-right: 350px;
     position: absolute;
 }
 
 #botão3 {
-    margin-top: 440px;
-    margin-right: 35%;
+    margin-top: 550px;
+    margin-right: 350px;
     position: absolute;
 }
 
 #botão4 {
-    margin-top: 40px;
-    margin-left: 35%;
+    margin-top: 150px;
+    margin-left: 350px;
     position: absolute;
 }
 
 #botão5 {
-    margin-top: 240px;
-    margin-left: 35%;
+    margin-top: 350px;
+    margin-left: 350px;
     position: absolute;
 }
 
