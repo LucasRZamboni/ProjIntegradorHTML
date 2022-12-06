@@ -306,31 +306,31 @@ header h1 img {
 /* ---------------- BOTÕES CONTEUDO ---------------- */
 
 #botão_des {
-    margin-top: 90px;
+    margin-top: 70px;
     margin-right: 350px;
     position: absolute;
 }
 
 #botão_que {
-    margin-top: 290px;
+    margin-top: 270px;
     margin-right: 350px;
     position: absolute;
 }
 
 #botão_pol {
-    margin-top: 490px;
+    margin-top: 470px;
     margin-right: 350px;
     position: absolute;
 }
 
 #botão_lixo {
-    margin-top: 90px;
+    margin-top: 70px;
     margin-left: 350px;
     position: absolute;
 }
 
 #botão_solo {
-    margin-top: 290px;
+    margin-top: 270px;
     margin-left: 350px;
     position: absolute;
 }
@@ -342,31 +342,31 @@ header h1 img {
 /* ---------------- INICIO BOTÕES MENU ---------------- */
 
 #botão1 {
-    margin-top: 90px;
+    margin-top: 70px;
     margin-right: 350px;
     position: absolute;
 }
 
 #botão2 {
-    margin-top: 290px;
+    margin-top: 270px;
     margin-right: 350px;
     position: absolute;
 }
 
 #botão3 {
-    margin-top: 490px;
+    margin-top: 470px;
     margin-right: 350px;
     position: absolute;
 }
 
 #botão4 {
-    margin-top: 90px;
+    margin-top: 70px;
     margin-left: 350px;
     position: absolute;
 }
 
 #botão5 {
-    margin-top: 290px;
+    margin-top: 270px;
     margin-left: 350px;
     position: absolute;
 }
